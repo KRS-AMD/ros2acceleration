@@ -40,15 +40,7 @@ The package provides the accceleration command for the ROS 2 command line tools.
             'ros2acceleration.verb = ros2acceleration.verb:VerbExtension',
         ],
         'ros2acceleration.verb': [
-            'bw = ros2acceleration.verb.bw:BwVerb',
-            'delay = ros2acceleration.verb.delay:DelayVerb',
-            'echo = ros2acceleration.verb.echo:EchoVerb',
-            'find = ros2acceleration.verb.find:FindVerb',
-            'hz = ros2acceleration.verb.hz:HzVerb',
-            'info = ros2acceleration.verb.info:InfoVerb',
             'list = ros2acceleration.verb.list:ListVerb',
-            'pub = ros2acceleration.verb.pub:PubVerb',
-            'type = ros2acceleration.verb.type:TypeVerb',
         ],
     }
 )
