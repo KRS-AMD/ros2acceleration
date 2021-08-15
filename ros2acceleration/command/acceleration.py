@@ -16,7 +16,7 @@ from ros2cli.command import CommandExtension
 
 
 class AccelerationCommand(CommandExtension):
-    """Various sub-commands for hardware acceleration."""
+    """Various hardware acceleration related sub-commands."""
 
     def add_arguments(self, parser, cli_name):
         self._subparser = parser
