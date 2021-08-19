@@ -41,6 +41,11 @@ The package provides the accceleration command for the ROS 2 command line tools.
         ],
         'ros2acceleration.verb': [
             'list = ros2acceleration.verb.list:ListVerb',
+            'select = ros2acceleration.verb.select:SelectVerb',
+            'start = ros2acceleration.verb.start:StartVerb',
+            'stop = ros2acceleration.verb.stop:StopVerb',
+            'restart = ros2acceleration.verb.restart:RestartVerb',
+            'remove = ros2acceleration.verb.remove:RemoveVerb',
         ],
     }
 )
