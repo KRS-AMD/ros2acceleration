@@ -2,6 +2,11 @@
 Changelog for package ros2acceleration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.0 (2022-01-17)
+------------------------
+* Port ros2acceleration logic to Vitis 2021.2
+* Support libdfx and dfx-mgr of the 2021.2 release
+
 0.2.0 (2021-08-20)
 ------------------------
 * Initial implementation of ros2 acceleration tools considering 

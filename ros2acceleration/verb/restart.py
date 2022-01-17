@@ -9,7 +9,7 @@
 #   \___\/\___\
 #
 # Licensed under the Apache License, Version 2.0
-# 
+#
 
 from ctypes import *
 from socket import *
@@ -27,6 +27,3 @@ class RestartVerb(VerbExtension):
     def main(self, *, args):
         stop_daemon()
         start_daemon()
-
-
-
