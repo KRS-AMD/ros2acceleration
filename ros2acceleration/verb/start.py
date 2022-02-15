@@ -44,6 +44,7 @@ def regenerate_firmware():
                 files_to_copy.append(get_path_ending(pkg_name, ".xclbin"))
                 files_to_copy.append(get_path_ending(pkg_name, ".bit.bin"))
                 files_to_copy.append(get_path_ending(pkg_name, ".dtbo"))
+                files_to_copy.append(get_path_ending(pkg_name, ".json"))
 
                 if not os.path.exists(destination_dir):
                     run("mkdir " + destination_dir, shell=True, timeout=1)
@@ -81,6 +82,7 @@ def contains_valid_kernel(pkg_name):
     - a valid bitstream (.bit.bin)
     - a valid device tree blob overlay (.dtbo)
     - a valid xilinx binary kernel file (.xclbin)
+    - a valid shell JSON file (.json)
 
     :param pkg_name (string)
     :return bool
@@ -88,6 +90,7 @@ def contains_valid_kernel(pkg_name):
     has_xclbin = False
     has_bitbin = False
     has_dtbo = False
+    has_json = False
 
     prefix = get_prefix_path(pkg_name)
     cpp_path = prefix + "/lib/" + pkg_name
@@ -104,8 +107,10 @@ def contains_valid_kernel(pkg_name):
             has_bitbin = True
         if artifact.endswith(".dtbo"):
             has_dtbo = True
+        if artifact.endswith(".json"):
+            has_json = True
 
-    return has_xclbin and has_bitbin and has_dtbo
+    return has_xclbin and has_bitbin and has_dtbo and has_json
 
 
 def is_cpp_package(pkg_name):
