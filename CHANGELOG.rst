@@ -2,6 +2,11 @@
 Changelog for package ros2acceleration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.0 (2022-02-15)
+------------------------
+* Release 0.4.0
+* Add support for libdfx json file
+
 0.3.0 (2022-01-17)
 ------------------------
 * Update ros2acceleration to Vitis 2021.2
