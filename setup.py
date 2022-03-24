@@ -5,7 +5,7 @@ package_name = "ros2acceleration"
 
 setup(
     name=package_name,
-    version="0.4.0",
+    version="0.5.0",
     packages=find_packages(exclude=["test"]),
     data_files=[
         ("share/" + package_name, ["package.xml"]),
@@ -14,9 +14,9 @@ setup(
     install_requires=["ros2cli"],
     zip_safe=True,
     author="Víctor Mayoral Vilches",
-    author_email="victorma@xilinx.com",
+    author_email="victor@accelerationrobotics.com",
     maintainer="Víctor Mayoral Vilches",
-    maintainer_email="victorma@xilinx.com",
+    maintainer_email="victor@accelerationrobotics.com",
     url="https://github.com/ros-acceleration/ros2acceleration",
     download_url="https://github.com/ros-acceleration/ros2acceleration/releases",
     keywords=[],
