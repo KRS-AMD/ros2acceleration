@@ -6,10 +6,9 @@
   <description>
     The acceleration command for ROS 2 command line tools.
   </description>
-  <maintainer email="victorma@xilinx.com">Víctor Mayoral Vilches</maintainer>
+  <maintainer email="victor@accelerationrobotics.com">Víctor Mayoral Vilches</maintainer>
   <license>Apache License 2.0</license>
-
-  <author email="victorma@xilinx.com">Víctor Mayoral Vilches</author>
+  <author email="victor@accelerationrobotics.com">Víctor Mayoral Vilches</author>
 
   <depend>ros2cli</depend>
 
@@ -22,7 +21,6 @@
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>ament_xmllint</test_depend>
-  <test_depend>geometry_msgs</test_depend>
   <test_depend>python3-pytest</test_depend>
   <test_depend>ros_testing</test_depend>
   <test_depend>std_msgs</test_depend>

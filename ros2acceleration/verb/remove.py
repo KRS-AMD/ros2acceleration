@@ -34,7 +34,8 @@ class RemoveVerb(VerbExtension):
     def add_arguments(self, parser, cli_name):
         add_strategy_node_arguments(parser)
         parser.add_argument(
-            "kernel", type=str, nargs="?", help="Kernel to remove.", default=None
+            "kernel", type=str, nargs="?",
+            help="Kernel to remove.", default=None
         )
 
     def main(self, *, args):

@@ -24,7 +24,6 @@ class AccelerationCommand(CommandExtension):
         add_subparsers_on_demand(
             parser, cli_name, '_verb', 'ros2acceleration.verb', required=False)
 
-
     def main(self, *, parser, args):
         if not hasattr(args, '_verb'):
             # in case no verb was passed
